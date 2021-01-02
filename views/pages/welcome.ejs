@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+    <main role="main" class="container">
+      <div class="col-lg-8 mx-auto content-div">
+        <h1>Welcome</h1>
+        <hr class="mb-4" />
+        <% if (user) { %>
+        <h4 id="successMessage" class="h4">Welcome <%= user.firstName %>!</h4>
+        <p class="p-3">You have now successfully subscribed</p>
+        <% } %>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

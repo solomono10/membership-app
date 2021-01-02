@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+
+    <main role="main" class="container">
+      <div class="col-lg-8 mx-auto content-div">
+        <h1>Registration form</h1>
+        <hr class="mb-4" />
+        <form action="/registration" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inputFirstName">FirstName</label>
+              <input
+                autofocus
+                type="firstName"
+                class="form-control"
+                id="inputFirstName"
+                name="firstName"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputLastName">LastName</label>
+              <input
+                type="lastName"
+                class="form-control"
+                id="inputLastName"
+                name="lastName"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <hr class="mb-4" />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="checkCatalogue"
+                name="checkCatalogue"
+              />
+              <label class="form-check-label" for="checkCatalogue">
+                Send me a Catalogue
+              </label>
+            </div>
+          </div>
+          <hr class="mb-4" />
+          <button
+            class="btn btn-primary btn-lg btn-block"
+            id="btnContinueSubmit"
+            value=""
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script type="text/javascript" src="javascript/script.js"></script>
+  </body>
+</html>

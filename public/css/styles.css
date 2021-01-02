@@ -1,0 +1,21 @@
+.content-div {
+  width: 90%;
+  min-height: 500px;
+  border: 1px solid #d3d3d3;
+  padding: 40px;
+}
+
+.centre-text {
+  text-align: center;
+}
+
+.cus-footer {
+  min-width: 90%;
+  padding: 10px;
+  margin: auto;
+}
+
+.read-only-text {
+  padding: 0 10px;
+  color: #808080;
+}
